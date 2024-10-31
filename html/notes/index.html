@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCademy notes</title>
+</head>
+<body><!-- allt måste vara inne i bodyn om det ska synas i webben -->
+    <h1>Notes from Code Cademy - HTML</h1> <!-- opening tag är <h1> closing tag är </h1> 
+                                                det du skriver mellanåt printas i webben-->
+    <p>Detta är en <strong>paragraf</strong>, jag kan skriva den i en rad</p><!--strong är i princip bold text-->
+    <p>
+        Eller att jag <em>skriver</em> den på ensam rad, men det visar samma sak <!-- em är i princip italic -->
+    </p>
+    <br><!-- Hoppar ner ett steg extra, en break-->
+
+    <div><!-- Jag är the parent, detta kallas nesting, vikitgt att förstå sen när CSS kommer in -->
+        <h3>Jag är syster till paragrafen under</h3>
+        <p>Jag är <span>paragrafen</span> under!</p>
+        <!-- span är för att separera en liten bit text från resten av texten i samma rad-->
+    </div>
+
+    <div id="headers"><!-- Detta är en div, betyder i princip att jag lägger alla headers
+              i en grupp tillsammans med varandra, div är parent, alla headers är childs -->
+              <!-- id="headers är att man ger denna div:en en attribut, man skapar ett id 
+                   som heter "header" så att man kan anropa detta i ex css elr js-->
+        <h1>h1 - Finns massa olika headings, från h1 - h6 </h1>
+        <h2>h2 - Finns massa olika headings, från h1 - h6 </h2>
+        <h3>h3 - Finns massa olika headings, från h1 - h6 </h3>
+        <h4>h4 - Finns massa olika headings, från h1 - h6 </h4>
+        <h5>h5 - Finns massa olika headings, från h1 - h6 </h5>
+        <h6>h6 - Finns massa olika headings, från h1 - h6 </h6>
+    </div>
+
+    <div>
+        <h2>Listor</h2>
+        <div>
+            <h3>Hur man gör en unordered lista:</h3>
+            <ul><!--Står för unordered list, alltså en lista i o-ordning -->
+                <li>Produkt 1</li><!-- li är för list, vad som ska stå i listan, kommer börja med default * -->
+                <li>Produkt 2</li>
+                <li>Produkt 3</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Hur man gör en ordered lista:</h3>
+            <ol><!-- Står för ordered list, alltså en lista i ordning-->
+                <li>Ordning 1</li><!--Kommer istället börja med siffror, ett och uppåt-->
+                <li>Ordning 2</li>
+                <li>Ordning 3</li>
+            </ol>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" alt="no pic :/">
+        <!-- Jag kan hämta en bild genom att ange url som source, alt är ifall bilden inte syns, så syns det, alternativ-->
+    </div>
+
+    <div>
+        <video src="https://content.codecademy.com/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" width="320" height="240">
+            <!--width och height säger hur stor videon ska vara, control säger att användaren ska kunna ha basic controll så som att pausa och spela-->
+            Video not supported
+        </video>
+    </div>
+    
+</body>
+</html>
